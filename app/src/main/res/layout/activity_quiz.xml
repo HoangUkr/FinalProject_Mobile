@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#08DABD"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".Quiz">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtQuestionNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Question: 1/10"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text="Score: 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text="Correct: 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtWrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text="Wrong: 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:text="00:30"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/txtQuestionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text Container"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:background="@drawable/question_container_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Option 1"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:button="@null"
+                android:background="@drawable/default_option_bg"
+                android:freezesText="true"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Option 2"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:button="@null"
+                android:freezesText="true"
+                android:textSize="22sp"
+                android:background="@drawable/default_option_bg"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Option 3"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:button="@null"
+                android:freezesText="true"
+                android:background="@drawable/default_option_bg"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_button4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Option 4"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:button="@null"
+                android:background="@drawable/default_option_bg"
+                android:freezesText="true"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:layout_marginTop="5dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop = "10dp">
+        <Button
+            android:id="@+id/button_next"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text = "Next"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            android:background="@drawable/confirm_option_bg"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

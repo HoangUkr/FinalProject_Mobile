@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center"
+    tools:context=".Result">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result of QuizApp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:background = "#009688">
+        <TextView
+            android:id="@+id/result_highScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High Score: "
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+        <TextView
+            android:id="@+id/totalQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Question: "
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+        <TextView
+            android:id="@+id/correct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correct: "
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+        <TextView
+            android:id="@+id/wrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wrong: "
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/play_again"
+            android:text = "Play Again"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="#009688"/>
+        <Button
+            android:id="@+id/home"
+            android:text = "Main Menu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="#009688"/>
+    </LinearLayout>
+</LinearLayout>
